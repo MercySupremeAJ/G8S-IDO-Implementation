@@ -278,7 +278,7 @@ For questions about this implementation:
 - **Project**: G8S University IDO Platform
 - **Course**: MSc Data Science - Blockchain Technology
 - **Semester**: Third Semester
-- **Year**: 2024
+- **Year**: 2025
 
 ---
 
