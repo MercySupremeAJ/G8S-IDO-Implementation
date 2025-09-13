@@ -17,7 +17,7 @@ export function TokenomicsChart() {
       <Card className="glassmorphism border-border/20">
         <CardHeader>
           <CardTitle className="font-serif">Token Distribution</CardTitle>
-          <CardDescription>G8ST token allocation across key stakeholders and use cases</CardDescription>
+          <CardDescription>G8S token allocation across key stakeholders and use cases</CardDescription>
         </CardHeader>
         <CardContent>
           <div className="h-64 sm:h-80">
@@ -72,7 +72,7 @@ export function TokenomicsChart() {
             <div className="space-y-2 text-xs sm:text-sm">
               <div className="flex justify-between">
                 <span className="text-muted-foreground">Total Supply:</span>
-                <span className="font-medium text-foreground">100,000,000 G8ST</span>
+                <span className="font-medium text-foreground">100,000,000 G8S</span>
               </div>
               <div className="flex justify-between">
                 <span className="text-muted-foreground">IDO Price:</span>

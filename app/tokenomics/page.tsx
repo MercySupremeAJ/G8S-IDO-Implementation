@@ -1,7 +1,12 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { ArrowLeft, BookOpen } from "lucide-react"
-import { TokenomicsChart } from "@/components/tokenomics-chart"
+import dynamic from "next/dynamic"
+
+const TokenomicsChart = dynamic(() => import("@/components/tokenomics-chart").then(mod => ({ default: mod.TokenomicsChart })), {
+  ssr: false,
+  loading: () => <div className="h-64 bg-muted/30 rounded-lg animate-pulse" />
+})
 import { MobileNav } from "@/components/mobile-nav"
 import Link from "next/link"
 
@@ -55,7 +60,7 @@ export default function TokenomicsPage() {
 
             <div className="text-center mb-16">
               <h1 className="font-bold text-3xl sm:text-4xl md:text-6xl text-foreground mb-6 text-balance">
-                G8ST Token
+                G8S Token
                 <span className="text-transparent bg-gradient-to-r from-primary to-accent bg-clip-text">
                   {" "}
                   Economics
@@ -85,7 +90,7 @@ export default function TokenomicsPage() {
               Token Utility & Benefits
             </h2>
             <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto">
-              G8ST tokens power the entire educational ecosystem with multiple use cases
+              G8S tokens power the entire educational ecosystem with multiple use cases
             </p>
           </div>
 
@@ -93,7 +98,7 @@ export default function TokenomicsPage() {
             <Card className="glassmorphism border-border/20">
               <CardHeader>
                 <CardTitle className="font-bold text-primary">Course Access</CardTitle>
-                <CardDescription>Use G8ST tokens to enroll in premium courses and specialized programs</CardDescription>
+                <CardDescription>Use G8S tokens to enroll in premium courses and specialized programs</CardDescription>
               </CardHeader>
             </Card>
 
@@ -147,7 +152,7 @@ export default function TokenomicsPage() {
           <div className="glassmorphism-strong rounded-2xl p-6 sm:p-8 md:p-16 text-center">
             <h2 className="font-bold text-2xl sm:text-3xl md:text-4xl text-foreground mb-4">Ready to Join the IDO?</h2>
             <p className="text-base sm:text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Secure your G8ST tokens now and be part of the educational revolution.
+              Secure your G8S tokens now and be part of the educational revolution.
             </p>
 
             <Link href="/dashboard">
